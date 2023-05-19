@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://use.fontawesome.com/b7bb9a0a52.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+        #content{
+    width: 1000px;
+    margin: auto;
+   
+}
+
+body{
+width: 950px;
+background-color: #222;
+
+
+
+}
+#header1 {
+        background: rgb(10, 243, 49);
+        height: 70px;
+        width: 1175px;
+        margin-left: -100px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        margin-top: 10px;
+        box-shadow: 0 2px 8px rgb(0 0 0 / 75%), inset 0 -5px rgb(0 0 0 / 26%);
+      }
+      /*body {
+        width: 1300px;
+        height: 5000px;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #30e8bf, #ff8235);
+      }*/
+      #header1 ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      #header1 li {
+        float: left;
+      }
+      #header1 li a {
+        display: inline-block;
+        color: rgb(24, 21, 21);
+        text-align: center;
+        padding: 22px 26px;
+        text-decoration: none;
+        font-size: 18px;
+
+      }
+
+      #header1 li a:hover {
+        background-color: rgb(255, 255, 255);
+        opacity: 0.9;
+        transition: 1.5s;
+        color: #E91E63;
+        
+      }
+      #frtt {
+        width: 111px;
+        background: rgb(10, 243, 49);
+        border: 3px solid #000;
+        font-size: 15px;
+        display: none;
+        position: absolute;
+        top: 150px;
+        text-align: center;
+        border-radius: 4px;
+        font-family: sans-serif;
+        font-weight: 600;
+        z-index: 1;
+        
+      }
+      #butt:hover #frtt {
+        display: block;
+      }
+
+      #frt {
+        width: 135px;
+        height: 540px;
+        background: rgb(10, 243, 49);
+        border: 3px solid #000;
+        font-size: 15px;
+        display: none;
+        position: absolute;
+        top: 151px;
+        text-align: center;
+        border-radius: 4px;
+        font-family: sans-serif;
+        font-weight: 600;
+        z-index: 1;
+        border-radius: 15px;
+        padding: 6px 0px;
+      }
+      #frt a {
+        color: rgb(8, 8, 8);
+        width: 75px;
+        padding: 25px 32px;
+        font-size: 15px;
+      }
+      #butt:hover #frt {
+        display: block;
+      }
+
+      #fe:hover {
+        background-color: turquoise;
+      }
+      #frt a:hover {
+        background-color: rgb(255, 255, 255);
+        color: red;
+        transition: 0.8s;
+        border-radius: 15px;
+      }  
+
+ 
+      
+      #button1:hover {
+        background: rgb(255, 0, 0);
+        transition: 0.7s;
+        color: white;
+      }
+      #button2:hover {
+        background-color: red;
+        transition: 0.7s;
+        color: white;
+      }
+      #button3:hover {
+        background-color: red;
+        transition: 0.7s;
+        color: white;
+      }
+      #button4:hover {
+        background-color: red;
+        transition: 0.7s;
+        color: white;
+      }
+      #button5:hover {
+        background-color: red;
+        transition: 0.7s;
+        color: white;
+      }
+      #button6:hover {
+        background-color: red;
+        transition: 0.7s;
+        color: white;
+      }
+      #button7:hover {
+        background-color: red;
+        transition: 0.7s;
+        color: white;
+      }
+      #class{
+        position: absolute;
+        transform: translate(265px, 34px);
+        background: #2f3640;
+        border-radius: 40px;
+        height: 50px;
+        padding: 10px;
+      }
+      #class:hover > input{
+        width: 535px;
+        padding: 5px;
+      }
+      #class:hover > #a1{
+      background: white;
+      }
+      #a1{
+        color: #e84118;
+        float: right;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #2f3640;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+      #input{
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        color: white;
+        font-size: 25px;
+        transition: 0.4s;
+        line-height: 40px;
+        width: 0px;
+        text-align: center;
+      }
+     
+      #art2{
+        transform: translate(-10px, 145px);
+      }
+      #arabic{
+        
+        width: 112px;
+        background: rgb(10, 243, 49);
+        border: 3px solid #000;
+        font-size: 15px;
+        height: 55px;
+        cursor: pointer;
+        font-family: sans-serif;
+        font-weight: 600;
+      }
+      #arabic:hover {
+        background-color: rgb(255, 255, 255);
+        color: red;
+        transition: 0.8s;
+      } 
+      #frensh{
+        
+        width: 112px;
+        background: rgb(10, 243, 49);
+        border: 3px solid #000;
+        font-size: 15px;
+        height: 55px;
+        cursor: pointer;
+        font-family: sans-serif;
+        font-weight: 600;
+      }
+      #frensh:hover {
+        background-color: rgb(255, 255, 255);
+        color: red;
+        transition: 0.8s;
+      } 
+.searchbox{
+  width: 90%;
+  margin: 20px 30px;
+}
+.head{
+  background: #34495e;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
+#value{
+  border: none;
+  background: #2c3e50;
+  padding: 6px;
+  font-size: 18px;
+  width: 80%;
+border-radius: 6px;
+color: white;
+}
+  .container{
+    background:#f1f1f1;
+  }
+  .profile{
+    margin: 10px 6px;
+    display: flex;
+    align-items: center;
+  }
+  .icon{
+    width: 40px;
+    width: 40px;
+    background: #2c3e50;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  .name{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+  }
+  .name:hover{
+    color: #E91E63;
+    text-decoration: underline;
+    transition: 1s;
+  }
+  #scroll{
+    position: fixed;
+    height: 40px;
+    width: 42px;
+    background:rgb(10, 243, 49) ;
+    right: 30px;
+    bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+   
+  
+
+}
+</style>
+
+
+        
+   
+<body >
+  <div id="scroll">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+</div>
+    <header style="width: 140%;height: 170px;background-image:url(Image_Bacground_Anime/anm.jpg);background-repeat: no-repeat;
+    background-size: cover;">
+        
+    <div id="content">
+       <span style="color: white;font-size: 43px;font-style:oblique;font-weight: bold;">TOP  </span>
+        <span style="color: red;font-size: 55px;font-style:oblique;font-weight: bold;">ANIME</span>
+        
+        <header id="header1">
+        
+        </button>
+        <button
+          id="fe"
+          type="button"
+          style="
+            width: 100px;
+            height: 65px;
+            float: right;
+            background: rgb(8, 236, 8);
+            border-radius: 30px;
+            cursor: pointer;
+            outline: 0px;
+          "
+        >
+          <a
+            href="lom.html"
+            target="_blank"
+            style="
+              color: rgb(255, 255, 255);
+              font-style: oblique;
+              text-decoration: none;
+            "
+            ><h3 id="TRA15">Login In</h3></a
+          >
+        </button>
+
+        <ul >
+          <li><a id="TRA1" href="pople.html">Home</a></li>
+          <li><a id="TRA2" href="char.html">Character</a></li>
+          <li><a id="TRA3" href="">Latest New</a></li>
+          <li><a id="TRA4" href="contact-us.html">Contact Us</a></li>
+          <li><a id="TRA5"  href="">Help</a></li>
+          <li id="butt" style="cursor: pointer">
+            <a id="TRA7">Categories</a>
+
+            <div id="frt">
+              <a id="TRA16" href="">Ambiguity</a>
+              <a id="TRA17" href="">Sports</a>
+              <a href="">Comedic</a>
+              <a href="">Romantic</a>
+              <a href="">Science fiction</a>
+              <a href="">Horror</a>
+              <a href="">Shoneen</a>
+          
+            </div>
+          </li>
+          <li id="butt"><a id="TRA6" href="">Langage</a>
+         <div id="frtt">
+          <button id="arabic" >Arabic</button>
+          <button id="frensh">frentsh</button>
+         </div>
+          
+          </li>
+        </ul>
+      </header>
+    </header>
+   
+      <div style="margin-top: 15px;margin-left: 200px;">
+            <span ><a href="pople.html" style="color: rgb(36, 50, 241);text-decoration: none;" >Home</a></span>
+           <span style="color: white;"> »</span>
+            <span style="color: white;">All Anime Are Her</span>
+        </div>
+<main style="background-color:white ;width: 70%;margin-left: 200px;height: auto;">
+
+
+<div class="searchbox">
+  <div class="head">
+    <h1 style="margin-left: -10px;-webkit-text-stroke: medium red;">All Anime Are Her ( A - Z )</h1>
+    <input onkeyup="filter()" type="text" id="value" placeholder="Type to Search">
+  </div>
+
+
+  <div class="container">
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Attaque On Tatne</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">A-Channel</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Aa! Megami-sama!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Abarenbou Rikishi!! Matsutarou</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">ACCA: 13-ku Kansatsu-Ku</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Accel World</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Acchi Kocchi</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Active Raid: Kidou Kyoushuushitsu Dai Hachi Gakari</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Africa no Salaryman</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Afro Samurai </a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Agatha Christie no Meitantei Poirot to Marple</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Aguu: Tensai Ningyou</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ahiru no Sora</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Aho Girl</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ai Tenchi Muyou!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ai Yori Aoshi</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Aikatsu!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Air</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Air Gear</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Air Master</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Aishiteruze Baby!!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Aiura</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ajin</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Akachan to Boku</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Akagami no Shirayuki-hime</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Akame ga Kill!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Akane Iro Ni Somaru Saka</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Akanesasu Shoujo</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Akatsuki no Yona</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">AKB0048</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Aki no Kanade</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Akikan!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Akira</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Aku no Hana</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Akudama Drive</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Akuma no Riddle</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Attaque On Tatne</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Aldnoah.Zero</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Alice to Zouroku</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">All Out!!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Allison to Lillia</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Amaama to Inazuma</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Amagami SS</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Amagi Brilliant Park</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Amatsuki</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ame-iro Cocoa</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Amnesia</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Angel Beats!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Angel Densetsu</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Angolmois: Genkou Kassenki</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ani ni Tsukeru Kusuri wa Nai!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Anima Yell!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Anne Happy</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ano Natsu de Matteru</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Another</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Another World</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ansatsu Kyoushitsu</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ao Ashi</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ao Haru Ride</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ao no Exorcist</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ao no Exorcist: Ura Ex</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ao no Kanata no Four Rhythm</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Aoharu X Kikanjuu</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Aoi Densetsu Shoot!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Aoki Hagane no Arpeggio: Ars Nova</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Appare-Ranman!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Appleseed Saga Ex Machina</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Aquarion Logos</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Aquarion Evol</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ar Tonelico: Sekai no Owari de Utai Tsuzukeru Shoujo</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Arad Senki: Slap Up Party</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Arakawa Under the Bridge</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Arata Kangatari</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Arc the Lad</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Arcana Famiglia</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Area 88</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Area no Kishi</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Area no Animation</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Arifureta Shokugyou de Sekai Saikyou</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">ARP Backstage Pass</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Arslan Senki</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Arte</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Aru Zombie Shoujo no Sainan</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Arve Rezzle: Kikaijikake no Yousei-tachi</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Asatir: Mirai no Mukashi Banachi</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ashita e Free Kick</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ashita no Joe</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Asobi Asobase</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Assassins Pride</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Assault Lily: Bouquet</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Astarotte no Omocha!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Asu no Yoichi</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Asura</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Asura Cryin'</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Atom: The Beginning</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Aura: Maryuuin Kouga Saigo no Tatakai</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Avatar 1 Water Book</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Avenger</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ayakashi</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Ayashi no Ceres</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Azumanga Daioh</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Azur Lane</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">A</span>
+      <a href="#" class="name">Azur Lane: Bisoku Zenshin!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">B-Project: Kodou*Ambitious</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">B: The Beginning</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Baby Steps</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Babylon</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Baccano!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Back Arrow</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Baka to Test to Shokanjuu</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bakemono no Ko</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bakemonogatari</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Baki</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bakugan Battle Brawlers</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bakuman.</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bakumatsu</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bakumatsu Gijinden Roman</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bakumatsu Kikansetsu Irohanihoheto</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bakumatsu: Crisis</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bakuretsu Tenshi</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bakusou Kyoudai Let's and Go</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bakuten!!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Ballroom e Youkso</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bamboo Blade</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Banana Fish</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Barakamon</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Basilisk: Ouka Ninpouchou</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Basquash!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Battery</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Attaque On Tatne</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Battle Programmer Shirase</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bayonetta: Bloody Fate</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Beastars</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Beatless</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Beck</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Beelzebub</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Beelzebub-jou no Okinimesu mama</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bem</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Ben-To</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bermuda Traingle: Colorful Pastrale</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bernard-jou Iwaku</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Berserk</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Beyblade Burst</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Big Order</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Binbou Shimai Monogatari</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Binbougami Ga!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Binchou-tan</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Biohazard:Damnation</a>
+    </div>    
+    
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Biohazard:Degeneration</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Birthday Wonderland</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bishoujo Senshi Sailor Moon</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bishounen Tanteidan</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Black Blood Brothers</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Black Bullet</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Black Cat</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Black Clover</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Black Fox</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Black Lagoon</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Black Rock Shooter</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Blade</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Blade and Soul</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Blade of the Immortal</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Blame! Movie</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Blassreiter</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">BlazBlue: Alter Memory</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bleach</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Blend S</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Blood</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Blood Lad</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Blood-C</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Blood: the Last Vampire</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bloodivores</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Blue Dragon</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Blue Period</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Blue Reflection Ray</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">BNA</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Boku Dake ga Inai Machi</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Boku no Chikyuu wo Mamotte</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Boku no Hero Academai</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Boku no Tonari ni Akoku Hakaishin ga Imasu</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bokura ga Ita</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bokura no Nanokakan Sensou</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bokura wa Minna Kawai-sou</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bokurano</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bokutachi no Remake</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bokutachi wa Benkyou ga Dekinai</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bonjour!!Koiaji Patisserie</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Boogiepop wa Warawanai</a>
+    </div>
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Boruto: Naruto Next Generations</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bounen no Xamdou</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Boys Be.....</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Brave 10</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Break Blade</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Breakers</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Brotherhood: Final Fantasy XV</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Brothers Conflict</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Btooom!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bubuki Buranki!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Buddy Complex</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Build Divide: Code Black</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bungaku Shoujo Memoire</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bungou Stray Dogs</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bungou to Alchemist: Shinpan no Haguruma</a>
+    </div>
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Burn the Witch</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Bus Gamer</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Busou Renkin</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Busou Shoujo Machiavellianism</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Buta</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Butlers: Chitose Momotose Monogatati</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Buzzer Beater</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">B</span>
+      <a href="#" class="name">Byousoku 5 Centimeter</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">C:the Money of Soul and Possibility Control</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Caligula</a>
+    </div>
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Campione!: Matsurowanu Kamigami to Kamigoroshi no Maou</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Canaan</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Captain Harlock</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Candy Candy</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Captain Tsubasa</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cardcaptor Sakura</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cardfight!! Vanguard</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Carnival Phantasm</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Carole and Tuesday</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Casshern Sins</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Castlevanai</a>
+    </div>
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cat's Eye</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cencoroll</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cencoroll Connect</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Centaur no Nayami</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cestvs: The Roman Fighter</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chain Chronicle: Haecceitas no Hikari</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chainsaw Man</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chance Traingle Session</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Change!! Getter Robo: Sekai Saigo no Hi</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chaos Dragon: Sekiryuu Seneki</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">ChàoS;Child</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">ChàoS;HEAD</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Charlotte</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cheat Kusushi no Slow Life: Isekai ni Tsukurou Drugstore</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cheating Craft</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cheer Danshi!!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chibi Maruko-chan: Watashi no Suki na Uta</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chibi Devi!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chicchana Yukitsukai Sugar</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chihayafuru</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chiisana Eiyuu: Kani to Tamago to Toumei Ningen</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chio-chan no Tsuugakuro</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chobits</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chocolate Underground</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Choujigen Game Neptune the Animation</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Choujin Koukousei-tachi wa Isekai Demo Yoyuu de Ikinuku you Desu!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Choukadou Girl 1/6</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chousoku Henkei Gyrozetter</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chouyaku Hyakuninisshu: Uta Koi</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chrno Crusade</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chrome Shelled Regios</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chu Feng: B.E.E</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chuubyou Gekihatsu Boy</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chuukan Kanriroku Tonegawa</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Chuunibyou Demo Koi ga Shitai!</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cider no You ni Kotoba ga Wakiagaru</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cinderella Girls Gekijou</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">City Hunter</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Clamp Gakuen Tanteidan</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">CLANNAD</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">ClassicaLoid</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Classroom Crisis</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Claymore</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Clion no Akari</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Clockwork Planet</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Code Geass</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Code-E</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Code: Breaker</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Code:Realize-Sousei no Himegimi</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Colorful</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Comet Lucifer</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Beck</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Comic Girls</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Concrete Revolutio: Choujin Gensou</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cop Craft</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Coppelion</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Copihan</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Coquelicot-zaka Kara</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Corpse Party: Missing Footage</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cowboy Bebop</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cowboy Bebop: Tengoku no Tobira</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Coyote Ragtime Show</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cross Game</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Crystal Blaze</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cuticle Tantei Inaba</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cyberpunk: Edgerunners</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cyborg 009:the Cyborg Soldier</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">Cyclops Shoujo Saipuu</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <a href="#" class="name">C3</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">D</span>
+      <a href="#" class="name">Beck</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">D</span>
+      <a href="#" class="name">Beck</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">D</span>
+      <a href="#" class="name">Beck</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">D</span>
+      <a href="#" class="name">Beck</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">D</span>
+      <a href="#" class="name">Beck</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">D</span>
+      <a href="#" class="name">Beck</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">D</span>
+      <a href="#" class="name">Beck</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">D</span>
+      <a href="#" class="name">Beck</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">D</span>
+      <a href="#" class="name">Beck</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">D</span>
+      <a href="#" class="name">Beck</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">D</span>
+      <a href="#" class="name">Beck</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">D</span>
+      <a href="#" class="name">Beck</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">D</span>
+      <a href="#" class="name">Beck</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">D</span>
+      <a href="#" class="name">Dr.Stone</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">H</span>
+      <a href="#" class="name">Hayakyuu</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">K</span>
+      <a href="#" class="name">Kuruko No Bascet</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">J</span>
+      <a href="#" class="name">Jujutsu</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">R</span>
+      <a href="#" class="name">Reborn</a>
+    </div>
+
+    <div class="profile">
+      <span class="icon">N</span>
+      <a href="#" class="name">Naruto</a>
+    </div>
+  </div>
+</div>
+
+
+
+    
+
+</main>
+
+
+
+<script type="text/javascript">
+    function filter(){
+var value,name,profil,i
+value=document.getElementById("value").value.toUpperCase()
+profil=document.getElementsByClassName("profile")
+
+for(i=0;i<profil.length;i++){
+name=profil[i].getElementsByClassName("name")
+if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
+profil[i].style.display="flex"
+}else{
+    profil[i].style.display="none"  
+}
+}
+    }
+
+    $(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 40) {
+            $('#scroll').fadeIn();
+        }else{
+            $('#scroll').fadeOut();
+        }
+    })
+
+
+
+     $("#scroll").click(function(){
+         $('html,body').animate({scrollTop : 0},800)
+     })
+ })
+</script>
+</body>
+
+
+</html>

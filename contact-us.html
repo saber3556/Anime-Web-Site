@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "montserrat" , sans-serif;
+    background: url(Image_Bacground_Anime/space2.jpg) no-repeat center;
+    background-size: cover;
+}
+#contact{
+    
+ 
+    padding: 40px 0;
+}
+#contact h1{
+    text-align: center;
+    color: #ddd;
+}
+#border{
+    width: 100Px;
+    height: 10px;
+    background: #34495e;
+    margin: 40px auto;
+}
+#from{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow:hidden ;
+}
+#tex{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+
+
+}
+#tex:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+textarea #tex{
+    resize: none;
+    height: 120px;
+}
+#submit{
+    float: right;
+    border: 0;
+    background:#34495e ;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#submit:hover{
+    background: #2980b9;
+}
+
+
+</style>
+    </head>
+    <body>
+        <div id="contact">
+            <h1>Contact Us</h1>
+            <div id="border"></div>
+            <form id="from" action="" method="POST">
+                <input type="text" id="tex" placeholder="Your name">
+                <input type="email" id="tex" placeholder="Your email">
+                <input type="tel" id="tex" placeholder="Your phone">
+                <textarea id="tex" placeholder="Your message"></textarea>
+                <input type="submit" name="" id="submit" value="Send">
+            </form>
+
+        </div>
+    </body>
+</html>

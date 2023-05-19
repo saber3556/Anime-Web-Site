@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <style>
+      #content {
+        width: 1000px;
+        height: 10000px;
+        margin: auto;
+        background: #34495e;
+      }
+
+      header {
+        background: rgb(10, 243, 49);
+        height: 70px;
+        width: 1000px;
+        margin-left: 0px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        box-shadow: 0 2px 8px rgb(0 0 0 / 75%), inset 0 -5px rgb(0 0 0 / 26%);
+      }
+      /*body {
+        width: 1300px;
+        height: 5000px;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #30e8bf, #ff8235);
+      }*/
+      header ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      header li {
+        float: left;
+      }
+      header li a {
+        display: inline-block;
+        color: rgb(24, 21, 21);
+        text-align: center;
+        padding: 23px 22px;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      header li a:hover {
+        background-color: rgb(255, 255, 255);
+        opacity: 0.9;
+        transition: 0.7s;
+      }
+
+      #frt {
+        width: 112px;
+        background: rgb(10, 243, 49);
+        border: 3px solid #000;
+        font-size: 15px;
+        display: none;
+        position: absolute;
+        top: 77px;
+        text-align: center;
+        border-radius: 4px;
+        font-family: sans-serif;
+        font-weight: 600;
+        z-index: 1;
+      }
+      #frt a {
+        color: rgb(8, 8, 8);
+        width: 60px;
+      }
+      #butt:hover #frt {
+        display: block;
+      }
+
+      #fe:hover {
+        background-color: turquoise;
+      }
+      #frt a:hover {
+        background-color: rgb(255, 255, 255);
+        color: red;
+        transition: 0.8s;
+      }
+      #arabic{
+        
+        width: 112px;
+        background: rgb(10, 243, 49);
+        border: 3px solid #000;
+        font-size: 15px;
+        height: 55px;
+        cursor: pointer;
+      }
+      #frensh{
+        
+        width: 112px;
+        background: rgb(10, 243, 49);
+        border: 3px solid #000;
+        font-size: 15px;
+        height: 55px;
+        cursor: pointer;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      ul {
+        margin-left: 100px;
+        margin-top: 50px;
+      }
+      #image {
+        margin: 21px 45px;
+        cursor: pointer;
+      }
+      #image:hover {
+        width: 230px;
+      }
+      #image1 {
+        margin: 55px 45px;
+        cursor: pointer;
+      }
+      #image1:hover {
+        width: 230px;
+      }
+      #image2 {
+        margin: 21px 45px;
+        cursor: pointer;
+      }
+      #image2:hover {
+        width: 230px;
+      }
+      #image3 {
+        margin: 54px 45px;
+        cursor: pointer;
+      }
+      #image3:hover {
+        width: 230px;
+      }
+      #image4 {
+        margin: 22px 45px;
+        cursor: pointer;
+      }
+      #image4:hover {
+        width: 230px;
+      }
+      #image5 {
+        margin: 52px 45px;
+        cursor: pointer;
+      }
+      #image5:hover {
+        width: 230px;
+      }
+      #image6 {
+        margin: 25px 45px;
+        cursor: pointer;
+      }
+      #image6:hover {
+        width: 230px;
+      }
+      #image7 {
+        margin: 51px 45px;
+        cursor: pointer;
+      }
+      #image7:hover {
+        width: 230px;
+      }
+      #image8 {
+        margin: 29px 45px;
+        cursor: pointer;
+      }
+      #image8:hover {
+        width: 230px;
+      }
+      #image9 {
+        margin: 48px 45px;
+        cursor: pointer;
+      }
+      #image9:hover {
+        width: 230px;
+      }
+      #image10 {
+        margin: 27px 45px;
+        cursor: pointer;
+      }
+      #image10:hover {
+        width: 230px;
+      }
+      #image11 {
+        margin: 48px 45px;
+        cursor: pointer;
+      }
+      #image11:hover {
+        width: 230px;
+      }
+      #image12 {
+        margin: 26px 45px;
+        cursor: pointer;
+      }
+      #image12:hover {
+        width: 230px;
+      }
+      #image13 {
+        margin: 49px 45px;
+        cursor: pointer;
+      }
+      #image13:hover {
+        width: 230px;
+      }
+      #image14 {
+        margin: 28px 45px;
+        cursor: pointer;
+      }
+      #image14:hover {
+        width: 230px;
+      }
+      #image15 {
+        margin: 47px 45px;
+        cursor: pointer;
+      }
+      #image15:hover {
+        width: 230px;
+      }
+      #image16 {
+        margin: 29px 45px;
+        cursor: pointer;
+      }
+      #image16:hover {
+        width: 230px;
+      }
+
+      #ssn {
+        transform: translate(33px, 380px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sd {
+        transform: translate(351px, -15px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sa {
+        transform: translate(670px, -15px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sz {
+        transform: translate(30px, 414px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #se {
+        transform: translate(352px, -50px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sr {
+        transform: translate(670px, -50px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #st {
+        transform: translate(36px, 381px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sy {
+        transform: translate(360px, -15px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #su {
+        transform: translate(670px, -16px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #si {
+        transform: translate(36px, 414px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #so {
+        transform: translate(355px, -48px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sp {
+        transform: translate(670px, -48px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #ss {
+        transform: translate(36px, 381px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sf {
+        transform: translate(356px, -15px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sh {
+        transform: translate(670px, -17px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sj {
+        transform: translate(36px, 412px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sk {
+        transform: translate(351px, -47px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sl {
+        transform: translate(670px, -46px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sw {
+        transform: translate(37px, 385px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sx {
+        transform: translate(354px, -19px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sv {
+        transform: translate(37px, 412px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sb {
+        transform: translate(354px, -45px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sn {
+        transform: translate(667px, -45px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sc {
+        transform: translate(670px, -19px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #san {
+        transform: translate(38px, 389px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #szn {
+        transform: translate(352px, -23px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sen {
+        transform: translate(670px, -23px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #srn {
+        transform: translate(38px, 408px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #stn {
+        transform: translate(352px, -42px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #syn {
+        transform: translate(670px, -43px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sun {
+        transform: translate(38px, 388px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sin {
+        transform: translate(353px, -21px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #spn {
+        transform: translate(670px, -21px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sqn {
+        transform: translate(40px, 407px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sdn {
+        transform: translate(353px, -42px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sfn {
+        transform: translate(670px, -43px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sgn {
+        transform: translate(40px, 386px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #shn {
+        transform: translate(355px, -20px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sjn {
+        transform: translate(670px, -20px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #skn {
+        transform: translate(40px, 409px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sln {
+        transform: translate(349px, -43px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #smn {
+        transform: translate(670px, -42px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #swn {
+        transform: translate(40px, 387px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sxn {
+        transform: translate(355px, -23px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #scn {
+        transform: translate(670px, -22px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #svn {
+        transform: translate(39px, 407px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sbn {
+        transform: translate(356px, -41px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #snn {
+        transform: translate(670px, -42px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #snwn {
+        transform: translate(38px, 389px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #snxn {
+        transform: translate(353px, -24px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      }
+      #sncn {
+        transform: translate(670px, -24px);
+        width: 516px;
+        height: 0px;
+        float: left;
+      } 
+      
+       #nett1 {
+        margin: 0 20px;
+        width: 52px;
+        height: 60px;
+        background-color: #ccc;
+        display: inline-block;
+        border-radius: 24px;
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15),
+          -6px -6px 12px rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        font-size: 28px;
+        transition: 0.3s linear;
+        position: relative;
+        cursor: pointer;
+      }
+      #nett1:hover {
+        transform: scale(1.3);
+        border-radius: 50%;
+      }
+      #nett1 i::before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-size: 200% 200%;
+        background-position: 75% 75%;
+        top: -10px;
+        left: 0;
+        line-height: 80px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background 0.5s linear;
+      }
+      #nett1:hover i::before {
+        background-position: 0% 0%;
+      }
+
+      #nett {
+        margin: 0 20px;
+        width: 52px;
+        height: 60px;
+        background-color: #ccc;
+        display: inline-block;
+        border-radius: 24px;
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15),
+          -6px -6px 12px rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        font-size: 28px;
+        transition: 0.3s linear;
+        position: relative;
+        cursor: pointer;
+      }
+      #nett:hover {
+        transform: scale(1.3);
+        border-radius: 50%;
+      }
+      #nett i::before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-size: 200% 200%;
+        background-position: 75% 75%;
+        top: -10px;
+        left: 0;
+        line-height: 80px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background 0.5s linear;
+      }
+      #nett:hover i::before {
+        background-position: 0% 0%;
+      }
+      .fa-heart::before {
+        background-image: linear-gradient(135deg, #d61c1c 30%, #0a3d62 50%);
+      }
+      #contur1{
+    transform: translate(177px, -79px);
+    font-size: 35px;
+      }
+      #contur2{
+    transform: translate(177px, -79px);
+    font-size: 35px;
+      }
+      #contur3{
+    transform: translate(177px, -79px);
+    font-size: 35px;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <header>
+       
+        </button>
+        <button
+          id="fe"
+          type="button"
+          style="
+            width: 100px;
+            height: 65px;
+            float: right;
+            background: rgb(8, 236, 8);
+            border-radius: 30px;
+            cursor: pointer;
+            outline: 0px;
+          "
+        >
+          <a
+            href="lom.html"
+            target="_blank"
+            style="
+              color: rgb(255, 255, 255);
+              font-style: oblique;
+              text-decoration: none;
+            "
+            ><h3>Login In</h3></a
+          >
+        </button>
+
+        <ul>
+          <li><a id="TRA1" href="pople.html">Home</a></li>
+          <li><a id="TRA2" href="char.html">Character</a></li>
+          <li><a id="TRA3" href="">Latest New</a></li>
+          <li><a id="TRA4" href="contact-us.html">Contact Us</a></li>
+          <li><a id="TRA5"  href="">Help</a></li>
+          <li id="butt" style="cursor: pointer">
+            <a id="TRA7">Categories</a>
+
+            <div id="frt">
+              <a href="">Sport</a>
+              <a href="">Action</a>
+              <a href="">Military</a>
+              <a href="ATK.html">Drama</a>
+              <a href="">Fantasy</a>
+              <a href="">shoneen</a>
+              <a href="">shoneen</a>
+              <a href="">shoneen</a>
+              <a href="">shoneen</a>
+              <a href="">shoneen</a>
+              <a href="">shoneen</a>
+            </div>
+          </li>
+          <li id="butt"><a id="TRA6" href="">Langage</a>
+         <div id="frt">
+          <button id="arabic" >Arabic</button>
+          <button id="frensh">frentsh</button>
+         </div>
+          
+          </li>
+        </ul>
+      </header>
+
+      <a href="Char-info/lolosh.html"><img id="image" src="Image-Char/lolosh.webp" /></a>
+      <div id="ssn">
+        <a id="nett"  ><i title="Like" class="fas fa-heart"></i></a>
+        <h1 id="contur1">0</h1>
+      </div>
+     
+
+      <a href="Char-info/levi.html"><img id="image" src="Image-Char/levi.webp" /></a>
+      <div id="sd">
+        <a id="nett1" ><i title="Like" class="fas fa-heart"></i></a>
+        <h1 id="contur2">0</h1>
+      </div>
+      <a href="Char-info/il.html"><img id="image" src="Image-Char/il.webp" /></a>
+      
+      <div id="sa">
+        <a id="nett" ><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <a href="Char-info/lufi.html"><img id="image1" src="Image-Char/lufi1.webp" /></a>
+      <div id="sz">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image1" src="Image-Char/okata.webp" />
+      <div id="se">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <a href="Char-info/yagami.html"><img id="image1" src="Image-Char/yagami.webp" /></a>
+      <div id="sr">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <a href="Char-info/zoro.html"><img id="image2" src="Image-Char/zoro1.webp" /></a>
+      <div id="st">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <a href="Char-info/kilwa.html"><img id="image2" src="Image-Char/kil.webp" /></a>
+      <div id="sy">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <a href="Char-info/full.html"><img id="image2" src="Image-Char/edward.webp" /></a>
+      <div id="su">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image3" src="Image-Char/naruto1.webp" />
+      <div id="si">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image3" src="Image-Char/katana.webp" />
+      <div id="so">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image3" src="Image-Char/satin.webp" />
+      <div id="sp">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image4" src="Image-Char/itashi.webp" />
+      <div id="ss">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image4" src="Image-Char/ruks.webp" />
+      <div id="sf">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image4" src="Image-Char/mikasa.webp" />
+      <div id="sh">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image5" src="Image-Char/hashi.webp" />
+      <div id="sj">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image5" src="Image-Char/erine.webp" />
+      <div id="sk">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image5" src="Image-Char/kaniki.webp" />
+      <div id="sl">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+
+      <img id="image6" src="Image-Char/rim.webp" />
+      <div id="sw">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image6" src="Image-Char/saytama.webp" />
+      <div id="sx">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image6" src="Image-Char/kakashi1.webp" />
+      <div id="sc">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image7" src="Image-Char/spike.webp" />
+      <div id="sv">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image7" src="Image-Char/kazuto.webp" />
+      <div id="sb">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image7" src="Image-Char/yato.webp" />
+      <div id="sn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image8" src="Image-Char/hitagi.webp" />
+      <div id="san">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image8" src="Image-Char/megumin.webp" />
+      <div id="szn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image8" src="Image-Char/gugo.webp" />
+      <div id="sen">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image9" src="Image-Char/jojo.webp" />
+      <div id="srn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image9" src="Image-Char/hisoka.webp" />
+      <div id="stn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image9" src="Image-Char/boy.webp" />
+      <div id="syn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image10" src="Image-Char/zero.webp" />
+      <div id="sun">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image10" src="Image-Char/oshino.webp" />
+      <div id="sin">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image10" src="Image-Char/kakina.webp" />
+      <div id="spn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image11" src="Image-Char/tiaga.webp" />
+      <div id="sqn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image11" src="Image-Char/mai.webp" />
+      <div id="sdn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image11" src="Image-Char/saber.webp" />
+      <div id="sfn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image12" src="Image-Char/yonu.webp" />
+      <div id="sgn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image12" src="Image-Char/eitshi.webp" />
+      <div id="shn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image12" src="Image-Char/asuna.webp" />
+      <div id="sjn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image13" src="Image-Char/koyomi.webp" />
+      <div id="skn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image13" src="Image-Char/holo.webp" />
+      <div id="sln">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image13" src="Image-Char/dazai.webp" />
+      <div id="smn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image14" src="Image-Char/card.webp" />
+      <div id="swn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image14" src="Image-Char/tado.webp" />
+      <div id="sxn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image14" src="Image-Char/voilet.webp" />
+      <div id="scn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image15" src="Image-Char/arataka.webp" />
+      <div id="svn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image15" src="Image-Char/sasuk.webp" />
+      <div id="sbn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image15" src="Image-Char/ishigo.webp" />
+      <div id="snn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image16" src="Image-Char/izuku.webp" />
+      <div id="snwn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image16" src="Image-Char/izaya.webp" />
+      <div id="snxn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+      <img id="image16" src="Image-Char/c.webp" />
+      <div id="sncn">
+        <a id="nett" href="#"><i title="Like" class="fas fa-heart"></i></a>
+      </div>
+    </div>
+    <script src="charjavaS.js"></script>
+  </body>
+</html>
